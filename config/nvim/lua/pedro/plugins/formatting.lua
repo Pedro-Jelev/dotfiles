@@ -1,5 +1,6 @@
 return {
   "stevearc/conform.nvim",
+  version = "7.1.0", -- update version need neovim v0.10
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     local conform = require("conform")
@@ -10,13 +11,11 @@ return {
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
         typescriptreact = { "prettier" },
-        svelte = { "prettier" },
         css = { "prettier" },
         html = { "prettier" },
         json = { "prettier" },
         yaml = { "prettier" },
         markdown = { "prettier" },
-        graphql = { "prettier" },
         liquid = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },
