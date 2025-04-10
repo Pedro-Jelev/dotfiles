@@ -1,6 +1,5 @@
 return {
   "stevearc/conform.nvim",
-  version = "7.1.0", -- update version need neovim v0.10
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     local conform = require("conform")
