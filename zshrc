@@ -25,13 +25,6 @@ source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
-#############################
-########## ALIASES ##########
-#############################
-
-alias @nvim_config="nvim ~/.config/nvim"
-alias @nvim_restore="cp -r ~/com/jelev/linux-config/config/nvim ~/.config/nvim"
-alias @nvim_destroy="rm -fR ~/.local/share/nvim ~/.local/state/nvim ~/.config/nvim"
 
 #############################
 ########## EXPORTS ##########
@@ -40,3 +33,17 @@ alias @nvim_destroy="rm -fR ~/.local/share/nvim ~/.local/state/nvim ~/.config/nv
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="/home/pedro_jelev/.local/bin:$PATH"
+
+
+#############################
+########## ALIASES ##########
+#############################
+
+alias @nvim_config="nvim ~/.config/nvim"
+alias @nvim_restore="cp -r ~/com/jelev/linux-config/config/nvim ~/.config/nvim"
+alias @nvim_destroy="rm -fR ~/.local/share/nvim ~/.local/state/nvim ~/.config/nvim"
+alias @nvim_update="rm -fR ~/com/jelev/dotfiles/config/nvim && cp -r ~/.config/nvim ~/com/jelev/dotfiles/config/nvim"
+
