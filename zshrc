@@ -43,7 +43,7 @@ export PATH="/home/pedro_jelev/.local/bin:$PATH"
 #############################
 
 alias @nvim_config="nvim ~/.config/nvim"
-alias @nvim_restore="cp -r ~/com/jelev/linux-config/config/nvim ~/.config/nvim"
+alias @nvim_restore="cp -r ~/com/jelev/dotfiles/config/nvim ~/.config/nvim"
 alias @nvim_destroy="rm -fR ~/.local/share/nvim ~/.local/state/nvim ~/.config/nvim"
 alias @nvim_update="rm -fR ~/com/jelev/dotfiles/config/nvim && cp -r ~/.config/nvim ~/com/jelev/dotfiles/config/nvim"
 
