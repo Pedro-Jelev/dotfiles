@@ -1,0 +1,17 @@
+{
+  "Reset-Default": {
+    "prefix": "reset-default",
+    "description": "Remove customizações externas de tags",
+    "body": ["* { margin: 0;\n padding: 0;\n box-sizing: border-box;\n}"]
+  },
+  "Centralizar Elementos": {
+    "prefix": "centralize-absolute",
+    "body": [
+      "position: absolute\n",
+      "top: 50%;\n",
+      "left:50%;\n",
+      "transform: translate(-50%, -50%);\n"
+    ],
+    "description": "Centraliza elementos usando position: absolute"
+  }
+}

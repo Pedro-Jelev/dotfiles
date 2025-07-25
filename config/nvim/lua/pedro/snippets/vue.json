@@ -1,0 +1,7 @@
+{
+  "vue-template": {
+    "prefix": "structure",
+    "description": "Template inicial para arquivos vue",
+    "body": "<script setup lang='ts'></script>\n<template></template>\n<style scoped></style>"
+  }
+}

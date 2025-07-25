@@ -1,0 +1,21 @@
+{
+  "React Page": {
+    "prefix": "create-page",
+    "description": "Layout para criação de páginas",
+    "body": [
+      "import { Container } from './style';\n",
+      "export function FR() {\n",
+      "return (\n",
+      "<Container></Container>\n",
+      ")}\n"
+    ]
+  },
+  "React StyledComponent": {
+    "prefix": "create-styled",
+    "description": "Layout da estilização do elemento usando StyledComponent",
+    "body": [
+      "import styled from 'styled-components';\n\n",
+      "export const Container = styled.div``;\n"
+    ]
+  }
+}
