@@ -1,11 +1,5 @@
-/**
- * Gruvbox Material Rofi theme
- * Color palette copied from https://github.com/sainnhe/gruvbox-material
- * https://github.com/hiimsergey/rofi-gruvbox-material
- */
-
- configuration {
-    font:				"DM Mono 12";
+configuration {
+    font:				"Cascadia Code 12";
     show-icons:				true;
     icon-theme:				"Arc-X-D";
     display-drun:			"Apps:";
@@ -13,107 +7,121 @@
     scroll-method:			0;
     disable-history:			false;
     sidebar-mode:			false;
- }
+}
+
+@theme "/dev/null"
 
 * {
-    // Taken from "Hard" variant
-    background: #282828;  // bg_statusline1
-    element: #32302f;     // bg_statusline2
-    selection: #a89984;   // grey2
-    text: #eee0b7;        // bg4 (light mode)
+    bg-col:  #24273a90;
+    bg-col-light: #24273a;
+    border-col: #24273a;
+    selected-col: #24273a;
+    blue: #8aadf4;
+    fg-col: #cad3f5;
+    fg-col2: #ed8796;
+    grey: #6e738d;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+    font: "JetBrainsMono Nerd Font 14";
+}
 
-    red: #ea6962;         // red
-    yellow: #d8a657;      // yellow
-    reddark: #c14a4a;     // red (light mode)
-    yellowdark: #b47109;  // yellow (light mode)
-
-    background-color:  transparent;
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 window {
-    height: 600;
-    width: 600;
-
-    border-radius: 10;
+    width: 45%;
+    height: 360px;
+    border: 3px;
+    border-color: @border-col;
+    background-color: @bg-col;
 }
 
 mainbox {
-    spacing: 0;
-    children: [inputbar, message, listview];
+    background-color: @bg-col;
 }
 
 inputbar {
-    color: @text;
-    padding: 14;
-    background-color: @background;
-}
-
-message {
-    padding: 10;
-    background-color: @selection;
-}
-
-listview {
-    padding: 8;
-    border-radius: 0 0 10 10;
-    border: 2 2 2 2;
-    border-color: @background;
-    background-color: @background;
-    dynamic: false;
-}
-
-textbox {
-    text-color: @text;
-}
-
-error-message {
-    border: 20 20 20 20;
-}
-
-entry, prompt, case-indicator {
-    text-color: inherit;
+    children: [prompt,entry];
+    background-color: @bg-col;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 prompt {
-    margin: 0 10 0 0;
+    background-color: @blue;
+    padding: 6px;
+    text-color: @bg-col-light;
+    border-radius: 3px;
+    margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+    text-color: @fg-col;
+    background-color: @bg-col;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 2;
+    lines: 5;
+    background-color: @bg-col;
 }
 
 element {
-    padding: 5;
-    vertical-align: 0.5;
-    border-radius: 10;
-    text-color: @text;
-    background-color: @element;
+    padding: 5px;
+    background-color: @bg-col;
+    text-color: @fg-col  ;
 }
 
-element.selected.normal {
-    background-color: @selection;
+element-icon {
+    size: 25px;
 }
 
-element.alternate.normal {
-    background-color: inherit;
+element selected {
+    background-color:  @selected-col ;
+    text-color: @fg-col2  ;
 }
 
-element.normal.active, element.alternate.active {
-    background-color: @yellow;
+mode-switcher {
+    spacing: 0;
+  }
+
+button {
+    padding: 10px;
+    background-color: @bg-col-light;
+    text-color: @grey;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
 }
 
-element.selected.active {
-    background-color: @yellowdark;
+button selected {
+  background-color: @bg-col;
+  text-color: @blue;
 }
 
-element.normal.urgent, element.alternate.urgent {
-    background-color: @red;
+message {
+    background-color: @bg-col-light;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
 }
 
-element.selected.urgent {
-    background-color: @reddark;
-}
-
-element-text, element-icon {
-    size: 40;
-    margin: 0 10 0 0;
-    vertical-align: 0.5;
-    background-color: inherit;
-    text-color: @text;
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @blue;
+    background-color: @bg-col-light;
 }
