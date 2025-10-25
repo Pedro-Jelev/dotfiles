@@ -25,7 +25,6 @@ return {
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require("luasnip.loaders.from_vscode").lazy_load()
 
-    -- loads vscode style snippets from path
     require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/lua/pedro/snippets" } })
 
     cmp.setup({
