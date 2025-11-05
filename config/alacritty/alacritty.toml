@@ -1,10 +1,44 @@
-import = ["~/.config/alacritty/themes/catppuccin_macchiato.toml"]
-
 [window]
-opacity = 0.9
+opacity = 0.7
+
 
 [font]
-normal.family = "FiraCode Nerd Font"
-bold.family = "FiraCode Nerd Font"
-italic.family = "FiraCode Nerd Font"
-bold_italic.family = "FiraCode Nerd Font"
+size = 10
+normal.family = "JetBrainsMonoNerdFontMono"
+
+
+### THEME ###
+# By Josean Martinez
+# Inspired by aura.toml
+
+[colors.primary]
+background = '#011423'
+foreground = '#CBE0F0'
+
+
+[colors.cursor]
+text = "#011423"
+cursor = "#47FF9C"
+
+
+[colors.normal]
+black = "#214969"
+red = "#E52E2E"
+green = "#44FFB1"
+yellow = "#FFE073"
+blue = "#0FC5ED"
+magenta = "#a277ff"
+cyan = "#24EAF7"
+white = "#24EAF7"
+
+
+[colors.bright]
+black = "#214969"
+red = "#E52E2E"
+green = "#44FFB1"
+yellow = "#FFE073"
+blue = "#A277FF"
+magenta = "#a277ff"
+cyan = "#24EAF7"
+white = "#24EAF7"
+
