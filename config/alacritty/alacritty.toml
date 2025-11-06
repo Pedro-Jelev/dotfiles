@@ -42,3 +42,9 @@ magenta = "#a277ff"
 cyan = "#24EAF7"
 white = "#24EAF7"
 
+
+[keyboard]
+bindings = [
+  {key = "N", mods = "Control|Shift", action = "CreateNewWindow"},
+]
+
