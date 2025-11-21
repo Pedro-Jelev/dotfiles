@@ -1,5 +1,13 @@
 # INSTRUCTIONS
 
+## SO
+
+### CONFIGS
+
+#### DIMINUIR DELAY DA MOVIMENTAÇÃO DO TECLADO
+
+gsettings set org.gnome.desktop.peripherals.keyboard delay 200
+
 ## NEOVIM
 
 ### LAZYGIT
