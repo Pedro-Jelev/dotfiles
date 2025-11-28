@@ -4,9 +4,13 @@
 
 ### CONFIGS
 
-#### DIMINUIR DELAY DA MOVIMENTAÇÃO DO TECLADO
+#### GNOME
 
 gsettings set org.gnome.desktop.peripherals.keyboard delay 200
+
+#### i3
+
+xset r rate 200 40
 
 ## NEOVIM
 
