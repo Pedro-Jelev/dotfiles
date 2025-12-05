@@ -8,6 +8,10 @@
 
 gsettings set org.gnome.desktop.peripherals.keyboard delay 200
 
+gsettings set org.gnome.shell.keybindings switch-to-application-1 []
+
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
+
 #### i3
 
 xset r rate 200 40
