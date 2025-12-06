@@ -10,7 +10,7 @@ return {
         -- "tailwindcss",
         "lua_ls",
         "emmet_ls",
-        -- "pyright",
+        "pyright",
         "eslint",
       },
     },
